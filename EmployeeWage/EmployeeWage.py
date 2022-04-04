@@ -11,7 +11,7 @@ def emp_wage():
     tot_working_hrs = 100
     emphrs = 0
     days = 0
-    while days <= tot_working_days or emphrs <= tot_working_hrs:
+    while days < tot_working_days or emphrs < tot_working_hrs:
         attendance = random.randint(0, 2)
         if attendance == emp_present:
             print("Employee is Working Full Time")
@@ -28,6 +28,7 @@ def emp_wage():
 
         daily_wage = emphrs * wage_per_hr
         print("daily wage = {}".format(daily_wage))
+        print("No of days = {}".format(days))
 
     total_emp_wage = wage_per_hr * emphrs
     return "Total Employee Wage = {}".format(total_emp_wage), "Total Employee Hrs ={}".format(emphrs)
