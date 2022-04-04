@@ -10,7 +10,7 @@ if attendance == emp_present:
     print("Employee is Working Full Time")
     empHrs = full_day_hr
 elif attendance == emp_part_time:
-    print("Employee is Working Part Time")
+    print(" Employee is Working Part Time ")
     empHrs = part_time_hr
 else:
     print("Employee is Absent")
