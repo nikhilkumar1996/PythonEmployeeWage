@@ -22,10 +22,15 @@ def emp_wage():
         else:
             print("Employee is Absent")
             emphrs += 0
-        days += 1
+
+        if attendance != 0:
+            days += 1
+
+        daily_wage = emphrs * wage_per_hr
+        print("daily wage = {}".format(daily_wage))
 
     total_emp_wage = wage_per_hr * emphrs
-    return "Total Employee Wage = {}".format(total_emp_wage)
+    return "Total Employee Wage = {}".format(total_emp_wage), "Total Employee Hrs ={}".format(emphrs)
 
 
 if __name__ == "__main__":
